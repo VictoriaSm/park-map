@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      // avoid issue when importing auto-generated css/scss typings (https://github.com/Microsoft/TypeScript-React-Starter/issues/8)
+      "allowSyntheticDefaultImports": true,
+      // https://stackoverflow.com/questions/49701735/cannot-find-module-csstype
+      "moduleResolution": "node",
+      "lib": ["es6", "dom"],
+      "baseUrl": "./",
+      "paths": {
+        "ol": ["node_modules/ol/src"],
+        "ol/*": ["node_modules/ol/src/*"]
+      }
+    },
+    "include": [
+      "node_modules/ol/**/*.js"
+    ]
+  }
+  
